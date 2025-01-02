@@ -8,7 +8,7 @@ export function SelectionPanel({ showPanel, selectedRows }) {
       <h3>Filas seleccionadas</h3>
       <ul>
         {selectedRows.map((row, index) => (
-          <li key={index}>{row.join(' - ')}</li>
+          <li key={index}>{row.name} {row.last_name} {row.second_last_name}</li>
         ))}
       </ul>
     </div>
@@ -17,5 +17,5 @@ export function SelectionPanel({ showPanel, selectedRows }) {
 
 SelectionPanel.propTypes = {
   showPanel: PropTypes.bool.isRequired,
-  selectedRows: PropTypes.arrayOf(PropTypes.array).isRequired,
+  selectedRows: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
