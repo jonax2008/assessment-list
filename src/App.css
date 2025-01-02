@@ -12,7 +12,7 @@ main.main{
     "search-panel selection-panel"
     "data-container selection-panel";
   ;
-  grid-template-columns: 1fr 40%;
+  grid-template-columns: 1fr 384px;
 }
 
 .search-panel{

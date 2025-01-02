@@ -28,7 +28,7 @@ export function SearchPanel() {
           type="search"
           name="input-search"
           id="input-search"
-          placeholder="Escriba el nombre para filtrar"
+          placeholder="Escriba el nombre/voz para filtrar"
           className="input-search"
           onInput={handleSearch}
         />
