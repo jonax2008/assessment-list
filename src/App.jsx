@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Header />
-      <main id="main">
+      <main id="main" className='main'>
         <SearchPanel />
       </main>      
     </>

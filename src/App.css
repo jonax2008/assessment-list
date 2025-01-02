@@ -5,8 +5,19 @@
   text-align: center;
 }
 
+.main,
+main.main{
+  display: grid;
+  grid-template-areas: 
+    "search-panel selection-panel"
+    "data-container selection-panel";
+  ;
+  grid-template-columns: 1fr 40%;
+}
+
 .search-panel{
   padding: 32px;
+  grid-area: search-panel;
 
   .input-search {
     padding: 8px 12px;
@@ -25,10 +36,12 @@
   border-radius: 4px;
   border: 1px solid #ddd;
   padding: 32px;
+  grid-area: selection-panel;
 }
 
 .data-container{
   padding: 32px;
+  grid-area: data-container;
 
   .data-grid{
     border-collapse: collapse;
@@ -57,6 +70,10 @@
       tr:hover{
         background-color: #36454F;
         cursor: pointer;
+      }
+
+      tr.selected-row{
+        background-color: #516776;        
       }
     }
   }
